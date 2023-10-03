@@ -6,12 +6,16 @@
     <title>Cric Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body >
+<body>
     <div id="header"><img src="images/cricpro-logo.jpeg"></div>
    <div id="head">
     <h1><b>ICC WORLD CUP 2011</b></h1>
     <h3>India Vs SriLanka ScoreCard</h3>
    </div>
+   <div id="imageModal" class="modal" onclick="closeImageModal()">
+      <span class="close" onclick="closeImageModal()">&times;</span>
+      <img id="modalImage" class="modal-content">
+  </div>
   <div id="table">
     <table>
       <tr id="column1">
@@ -24,7 +28,7 @@
     </tr>  
 
     <tr id="column2" >
-        <td class="one" >Batsman</td>
+        <td class="one">Batsman</td>
         <td class="two"></td>
         <td class="three">R</td>
         <td class="four">B</td>
@@ -34,7 +38,7 @@
     </tr>
 
     <tr id="column3">
-       <td class="one"><a href="images/cricpro-sehwag.png">Virender Sehwag</a></td> 
+       <td class="one"><a href="#" onclick="openImageModal('images/cricpro-sehwag.png')">Virender Sehwag</a></td> 
        <td class="two">lbwl b L Malinga</td>
        <td class="three">0</td>
        <td class="four">2</td>
@@ -44,7 +48,7 @@
     </tr>
 
     <tr id="column4">
-       <td class="one"><a href="images/cricpro-sachin.png">Sachin Tendulkar</a></td>
+       <td class="one"><a href="#" onclick="openImageModal('images/cricpro-sachin.png')">Sachin Tendulkar</a></td>
        <td class="two">c K Sangakkara b L Malinga</td>
        <td class="three">18</td>
        <td class="four">14</td>
@@ -54,7 +58,7 @@
     </tr>
      
     <tr id="column5">
-        <td class="one"><a href="images//cricpro-gambhir.png">Guatham Ghambir</a></td>
+        <td class="one"><a href="#" onclick="openImageModal('images//cricpro-gambhir.png')">Guatham Ghambir</a></td>
         <td class="two"> b T Perera</td>
         <td class="three">97</td>
         <td class="four">122</td>
@@ -64,7 +68,7 @@
      </tr>
 
      <tr id="column6">
-        <td class="one"><a href="images/cricpro-virat-kohli.png">Virat Kohli</a></td>
+        <td class="one"><a href="#" onclick="openImageModal('images/cricpro-virat-kohli.png')">Virat Kohli</a></td>
         <td class="two">c & b T Dilshan</td>
         <td class="three">35</td>
         <td class="four">49</td>
@@ -74,7 +78,7 @@
      </tr>
 
      <tr id="column7">
-        <td class="one"><a href="images/cricpro-dhoni.png">MS Dhoni (c & wk)</a></td>
+        <td class="one"><a href="#" onclick="openImageModal('images/cricpro-dhoni.png')">MS Dhoni (c & wk)</a></td>
         <td class="two">not out</td>
         <td class="three">91</td>
         <td class="four">79</td>
@@ -84,7 +88,7 @@
      </tr>
 
      <tr id="column8">
-        <td class="one"><a href="images/cricpro-yuvraj.png">Yuvraj Singh</a></td>
+        <td class="one"><a href="#" onclick="openImageModal('images/cricpro-yuvraj.png')">Yuvraj Singh</a></td>
         <td class="two">not out</td>
         <td class="three">21</td>
         <td class="four">24</td>
@@ -110,16 +114,17 @@
      <tr id="column11">
         <td class="one">Did not bat</td>
         <td colspan="5">
-            <a href="images/cricpro-suresh-raina.jpg">Suresh Raina,</a>
-            <a href="images/cricpro-harbhajan.jpg">Harbhajan Singh,</a>
-            <a href="images/cricpro-zaheer-khan.jpg">Zaheer Khan,</a>
-            <a href="images/cricpro-munaf-patel.jpg">Munaf Patel,</a>
-            <a href="images/cricpro-sreeshanth.jpg">S Sreesnath</a>
+            <a href="#" onclick="openImageModal('images/cricpro-suresh-raina.jpg')">Suresh Raina,</a>
+            <a href="#" onclick="openImageModal('images/cricpro-harbhajan.jpg')">Harbhajan Singh,</a>
+            <a href="#" onclick="openImageModal('images/cricpro-zaheer-khan.jpg')">Zaheer Khan,</a>
+            <a href="#" onclick="openImageModal('images/cricpro-munaf-patel.jpg')">Munaf Patel,</a>
+            <a href="#" onclick="openImageModal('images/cricpro-sreeshanth.jpg')">S Sreesnath</a>
         </td>
         <td></td>
      </tr>
     </table>
     <footer class="footer">Made by, yours truly.</footer>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
